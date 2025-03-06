@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="C-vyLk0tnHw3VtMMgP7b-23" value="Customers" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fontSize=11;" parent="1" vertex="1">
-          <mxGeometry x="-310" y="-880" width="280" height="180" as="geometry" />
+          <mxGeometry x="-330" y="-910" width="280" height="180" as="geometry" />
         </mxCell>
         <mxCell id="C-vyLk0tnHw3VtMMgP7b-24" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;fontSize=11;" parent="C-vyLk0tnHw3VtMMgP7b-23" vertex="1">
           <mxGeometry y="30" width="280" height="30" as="geometry" />
@@ -71,15 +71,6 @@
           <mxGeometry x="30" width="250" height="30" as="geometry">
             <mxRectangle width="250" height="30" as="alternateBounds" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="w9mWx4xmPTcLW8J2xh81-3" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="120" y="-220" width="300" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="w9mWx4xmPTcLW8J2xh81-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="w9mWx4xmPTcLW8J2xh81-3" vertex="1">
-          <mxGeometry width="300" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="w9mWx4xmPTcLW8J2xh81-1" value="&lt;div&gt;Orders&lt;/div&gt;&lt;div&gt;--------------------&lt;/div&gt;&lt;div&gt;order_id &amp;nbsp; &amp;nbsp; BIGINT AUTO_INCREMENT PRIMARY KEY&lt;/div&gt;&lt;div&gt;customer_id &amp;nbsp;BIGINT (FK) NOT NULL → Customers.customer_id&lt;/div&gt;&lt;div&gt;total_price &amp;nbsp;DECIMAL(10,2) NOT NULL CHECK (total_price &amp;gt;= 0)&lt;/div&gt;&lt;div&gt;order_time &amp;nbsp; DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP&lt;/div&gt;&lt;div&gt;status_id &amp;nbsp; &amp;nbsp;BIGINT (FK) NOT NULL → Order_Status.status_id&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="w9mWx4xmPTcLW8J2xh81-3" vertex="1">
-          <mxGeometry x="-80" y="10" width="380" height="200" as="geometry" />
         </mxCell>
         <mxCell id="9dYKtar3qulCU9VerEFR-1" value="Addresses" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="-640" y="-650" width="280" height="180" as="geometry" />
@@ -215,6 +206,40 @@
         <mxCell id="9dYKtar3qulCU9VerEFR-35" value="status_id    BIGINT (FK) NOT NULL → Order_Status.status_id&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-33">
           <mxGeometry x="30" width="380" height="30" as="geometry">
             <mxRectangle width="380" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w9mWx4xmPTcLW8J2xh81-1" value="&lt;div&gt;&lt;div&gt;Order_Status&lt;/div&gt;&lt;div&gt;--------------------&lt;/div&gt;&lt;div&gt;status_id &amp;nbsp; &amp;nbsp;BIGINT AUTO_INCREMENT PRIMARY KEY&lt;/div&gt;&lt;div&gt;status_name &amp;nbsp;ENUM(&#39;Pending&#39;, &#39;Preparing&#39;, &#39;Delivered&#39;, &#39;Canceled&#39;) UNIQUE NOT NULL&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-270" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-36" value="Order_Status&#xa;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="-380" width="470" height="90" as="geometry">
+            <mxRectangle x="-570" y="-380" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-37" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-36">
+          <mxGeometry y="30" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-38" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-37">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-39" value="status_id    BIGINT AUTO_INCREMENT PK&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-37">
+          <mxGeometry x="30" width="440" height="30" as="geometry">
+            <mxRectangle width="440" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-40" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-36">
+          <mxGeometry y="60" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-41" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-40">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dYKtar3qulCU9VerEFR-42" value="status_name  ENUM(&#39;Pending&#39;, &#39;Preparing&#39;, &#39;Delivered&#39;, &#39;Canceled&#39;) UNIQUE NOT NULL&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="9dYKtar3qulCU9VerEFR-40">
+          <mxGeometry x="30" width="440" height="30" as="geometry">
+            <mxRectangle width="440" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
       </root>

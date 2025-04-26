@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.14">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1698" dy="1681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2173" dy="1424" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -115,84 +115,71 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-24" value="Fuel_Inventory" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="-780" y="-720" width="320" height="210" as="geometry" />
+          <mxGeometry x="-900" y="-720" width="440" height="180" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-25" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="30" width="320" height="30" as="geometry" />
+          <mxGeometry y="30" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-26" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-25">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-27" value="campaign_id (PK) BIGINT AUTO_INCREMENT&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-25">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="leb3V-kZr9IMVpuxgVA3-27" value="inventory_id (PK) BIGINT GENERATED ALWAYS AS IDENTITY&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-25">
+          <mxGeometry x="30" width="410" height="30" as="geometry">
+            <mxRectangle width="410" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-28" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="60" width="320" height="30" as="geometry" />
+          <mxGeometry y="60" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-29" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-28">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-30" value="campaign_name VARCHAR(100) NOT NULL, UNIQUE&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-28">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="leb3V-kZr9IMVpuxgVA3-30" value="station_id (FK) BIGINT NOT NULL → Fuel_Station station_id&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-28">
+          <mxGeometry x="30" width="410" height="30" as="geometry">
+            <mxRectangle width="410" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-31" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="90" width="320" height="30" as="geometry" />
+          <mxGeometry y="90" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-32" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-31">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-33" value="start_date DATE NOT_NULL&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-31">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="leb3V-kZr9IMVpuxgVA3-33" value="fuel_type_id (FK) BIGINT NOT NULL → Fuel_Type fuel_type_id&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-31">
+          <mxGeometry x="30" width="410" height="30" as="geometry">
+            <mxRectangle width="410" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-34" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="120" width="320" height="30" as="geometry" />
+          <mxGeometry y="120" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-35" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-34">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-36" value="end_date DATE NOT_NULL&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-34">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="leb3V-kZr9IMVpuxgVA3-36" value="quantity_available DECIMAL(10,2) NOT NULL CHECK (quantity_available &gt;= 0)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-34">
+          <mxGeometry x="30" width="410" height="30" as="geometry">
+            <mxRectangle width="410" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-37" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="150" width="320" height="30" as="geometry" />
+          <mxGeometry y="150" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-38" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-37">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-39" value="candidate_name VARCHAR(100) NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-37">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-40" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-24">
-          <mxGeometry y="180" width="320" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-41" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-40">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="leb3V-kZr9IMVpuxgVA3-42" value="campaign_message TEXT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-40">
-          <mxGeometry x="30" width="290" height="30" as="geometry">
-            <mxRectangle width="290" height="30" as="alternateBounds" />
+        <mxCell id="leb3V-kZr9IMVpuxgVA3-39" value="last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;" vertex="1" parent="leb3V-kZr9IMVpuxgVA3-37">
+          <mxGeometry x="30" width="410" height="30" as="geometry">
+            <mxRectangle width="410" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="leb3V-kZr9IMVpuxgVA3-43" value="Supplier" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fontSize=11;" vertex="1" parent="1">

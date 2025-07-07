@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.1.6">
   <diagram name="Page-1" id="Knwpmiyrfyd92lLHrczh">
-    <mxGraphModel dx="1072" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1072" dy="1834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,7 +33,7 @@
             <mxGeometry x="15" y="40" width="215" height="200" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-13" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-180;" vertex="1" parent="1">
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-13" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rotation=-180;fontColor=light-dark(#000000,#1846FF);" vertex="1" parent="1">
           <mxGeometry x="205.63" y="350" width="208.75" height="190" as="geometry" />
         </mxCell>
         <mxCell id="6ZgsmuUv65HqEDqG2Z2C-14" value="&lt;div&gt;EXT Tables (file_fdw)&lt;/div&gt;&lt;div&gt;• ext_car_sales_a&lt;/div&gt;&lt;div&gt;• ext_car_sales_b&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -41,6 +41,24 @@
         </mxCell>
         <mxCell id="6ZgsmuUv65HqEDqG2Z2C-15" value="&lt;div&gt;&lt;div&gt;SRC Tables (casted types)&lt;/div&gt;&lt;div&gt;• src_car_sales_a&lt;/div&gt;&lt;div&gt;• src_car_sales_b&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="209.25" y="450" width="178.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-16" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-100" width="270" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-18" value="&lt;ol&gt;&lt;li&gt;ce_customers_scd&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;(SCD2 tracked customers)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-90" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-19" value="&lt;div&gt;2. ce_products&lt;/div&gt;&lt;div&gt;(Normalized car info)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="415" y="-30" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-20" value="3.ce_employees&lt;br&gt;(Employee data)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="10" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-21" value="4.ce_stores&lt;br&gt;(Store locations)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414.38" y="50" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ZgsmuUv65HqEDqG2Z2C-22" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

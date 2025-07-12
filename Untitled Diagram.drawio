@@ -25,10 +25,10 @@
         <mxCell id="04_-Qgdl5FIos_pILtdB-7" value="Staging Area" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="20" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="04_-Qgdl5FIos_pILtdB-8" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="04_-Qgdl5FIos_pILtdB-8" value="&lt;div&gt;ext_car_sales_a&lt;/div&gt;&lt;div&gt;ext_car_sales_b&lt;/div&gt;&lt;div&gt;----------------------&lt;/div&gt;&lt;div&gt;EXTERNAL TABLES (FDW)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="225" y="80" width="110" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="04_-Qgdl5FIos_pILtdB-9" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="04_-Qgdl5FIos_pILtdB-9" value="&lt;div&gt;src_car_sales_a&lt;/div&gt;&lt;div&gt;src_car_sales_b&lt;/div&gt;&lt;div&gt;----------------------&lt;/div&gt;&lt;div&gt;STAGING TABLES (VARCHAR)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="225" y="230" width="110" height="120" as="geometry" />
         </mxCell>
       </root>

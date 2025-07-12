@@ -52,6 +52,9 @@
         <mxCell id="04_-Qgdl5FIos_pILtdB-23" value="Extract" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="04_-Qgdl5FIos_pILtdB-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-24" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Load raw CSV data into external tables (FDW),&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;then cast into structured staging tables with VARCHAR&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="360" width="140" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

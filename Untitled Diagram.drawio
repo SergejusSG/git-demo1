@@ -25,11 +25,32 @@
         <mxCell id="04_-Qgdl5FIos_pILtdB-7" value="Staging Area" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="20" width="100" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="04_-Qgdl5FIos_pILtdB-8" target="04_-Qgdl5FIos_pILtdB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="04_-Qgdl5FIos_pILtdB-8" value="&lt;div&gt;ext_car_sales_a&lt;/div&gt;&lt;div&gt;ext_car_sales_b&lt;/div&gt;&lt;div&gt;----------------------&lt;/div&gt;&lt;div&gt;EXTERNAL TABLES (FDW)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="225" y="80" width="110" height="120" as="geometry" />
         </mxCell>
         <mxCell id="04_-Qgdl5FIos_pILtdB-9" value="&lt;div&gt;src_car_sales_a&lt;/div&gt;&lt;div&gt;src_car_sales_b&lt;/div&gt;&lt;div&gt;----------------------&lt;/div&gt;&lt;div&gt;STAGING TABLES (VARCHAR)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="225" y="230" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=80;exitDy=65;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" edge="1" parent="1" source="04_-Qgdl5FIos_pILtdB-1" target="04_-Qgdl5FIos_pILtdB-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="190" as="sourcePoint" />
+            <mxPoint x="520" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-18" value="Extract" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="04_-Qgdl5FIos_pILtdB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=50;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;" edge="1" parent="1" source="04_-Qgdl5FIos_pILtdB-3" target="04_-Qgdl5FIos_pILtdB-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="230" as="sourcePoint" />
+            <mxPoint x="225" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04_-Qgdl5FIos_pILtdB-23" value="Extract" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="04_-Qgdl5FIos_pILtdB-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
